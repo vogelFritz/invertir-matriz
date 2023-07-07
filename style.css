@@ -1,0 +1,30 @@
+/* Muy poco flexible (difícil hacer matrices de distintas dimensiones) */
+/* .matriz {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 500px;
+  height: 500px;
+  align-items: center;
+}
+.elem-input {  
+  position: absolute;
+  width: 10%;
+  height: 10%;
+}
+
+.sec-file {
+  margin-top: 33%;
+}
+
+.third-file {
+  margin-top: 66%;
+}
+
+.sec-column {
+  margin-left: 33%;
+}
+
+.third-column {
+  margin-left: 66%;
+} */
