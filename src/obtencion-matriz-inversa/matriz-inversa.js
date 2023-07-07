@@ -30,7 +30,7 @@ const menorComplementario = (matriz, fila, col, n) => {
  * @param {Array<Array<Number>>} matriz 
  * @param {Number} n Dimensión de la matriz
  */
-const determinante = ( matriz, n ) => {
+export const determinante = ( matriz, n ) => {
     let auxMat = structuredClone(matriz); // Para evitar cambiar matriz por referencia
     let auxDet = 0;
     if( n > 1 ){
@@ -45,13 +45,6 @@ const determinante = ( matriz, n ) => {
     }
 }
 
-/**
- * 
- * @param {Array<Array<Number>>} matriz 
- * @returns {boolean}
- */
-const esInversible = ( matriz ) => determinante(matriz, matriz[0].length) != 0;
-
 
 /**
  * 
@@ -63,11 +56,6 @@ export const obtencionMatrizInversa = ( matriz ) => {
     const n = matriz[0].length;
     let matAux = structuredClone(matriz);
 
-    if( !esInversible( matriz ) ) {
-        console.warn('La matriz NO es inversible');
-        return;
-    } 
-    console.warn('La matriz es inversible');
     for(let i = 0; i < n; i++){
         for(let j = 0; j < n; j++){
             if( i === j )

@@ -1,11 +1,9 @@
 .matriz {
     width: 500px;
     height: 500px;
-    align-items: center;
+    margin-inline: 2rem;
 }
 
 #input-mat {
-    position: fixed;
-    top: 30%;
-    left: 30%;
+    position: relative;
 }
